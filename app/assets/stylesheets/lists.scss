@@ -1,3 +1,16 @@
 // Place all the styles related to the lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.striker {
+  text-decoration:line-through;
+}
+
+td.cell_btn {
+  vertical-align: center;
+  text-align: center;
+}
+
+.list_checkbox  {
+  transform: scale(2);
+  margin: auto;
+}

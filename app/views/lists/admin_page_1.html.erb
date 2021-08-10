@@ -1,4 +1,9 @@
+<h1>Admin Page</h1>
+
+
 <% @titles.each do |i| %>  
+
+
 <table class='table table-bordered'>
   <thead>
     <tr>
@@ -37,7 +42,7 @@
           </td>
           
           <td width="10%">
-            <%= link_to 'Show', list %>
+            <%#= link_to 'Show', list %>
             <%#= link_to 'Edit', edit_list_path(list) %>
             <%= link_to 'Delete', list, class: 'btn btn-outline-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
@@ -50,7 +55,7 @@
 
 <br>
 
-<%= link_to 'Admin Page', lists_admin_page_path, class: 'btn btn-outline-secondary' %>
+<%#= link_to 'Add Checklist Item', new_list_path, class: 'btn btn-outline-secondary' %>
 
 <br><br>
 <div class="form-group" >

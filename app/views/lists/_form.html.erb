@@ -11,25 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :client_id %>
-    <%= form.text_field :client_id %>
+
+  <div class="field form-group">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= form.label :list_group %>
-    <%= form.text_field :list_group %>
-  </div>
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :item %>
-    <%= form.text_field :item %>
+    <%= form.text_field :item, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :completed %>
-    <%= form.check_box :completed %>
+  <div class="field form-group form-check">
+    <%= form.check_box :completed, class: 'form-check-input' %>
+    <%= form.label :completed, class: 'from-check-label' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Update Checklist Item", class: 'btn btn-outline-success' %>
   </div>
 <% end %>
